@@ -7,7 +7,6 @@ https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
 
 *First you must set open manipulator   
 http://emanual.robotis.com/docs/en/platform/openmanipulator/  
-http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/  
 
 *Sencond,  download modifed git. 
 ```bash
