@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="ocean">
+    <static>true</static>
+    <link name="link">	
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://ocean/meshes/model.dae</uri>
+	    <scale>0.05 0.05 0.05</scale> 
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ocean/meshes/model.dae</uri>
+	    <scale>0.05 0.05 0.05</scale> 
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

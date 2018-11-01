@@ -1,0 +1,14 @@
+material water
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture water.png
+      }
+    }
+  }
+}
+

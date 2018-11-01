@@ -1,48 +1,55 @@
-# OpenManipulator
-<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/openmanipulator/OpenManipulator.png">
-<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png" width="500">
+## Description
+This git is addition application git for Open Manipulator.  
+Original Reference Code is   
+https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git  
 
-## ROS Packages for OpenManipulator
-|Version|Kinetic + Ubuntu Xenial|Melodic + Ubuntu Bionic|
-|:---:|:---:|:---:|
-|[![GitHub version](https://badge.fury.io/gh/ROBOTIS-GIT%2Fopen_manipulator_simulations.svg)](https://badge.fury.io/gh/ROBOTIS-GIT%2Fopen_manipulator_simulations)|[![Build Status](https://travis-ci.org/ROBOTIS-GIT/open_manipulator_simulations.svg?branch=kinetic-devel)](https://travis-ci.org/ROBOTIS-GIT/open_manipulator_simulations)|-|
+## environment setting 
 
-## ROBOTIS e-Manual for OpenManipulator
-- [ROBOTIS e-Manual for OpenManipulator](http://emanual.robotis.com/docs/en/platform/openmanipulator/)
+*First you must set open manipulator   
+http://emanual.robotis.com/docs/en/platform/openmanipulator/  
+http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/  
 
-## Wiki for open_manipulator_simulations Packages
-- http://wiki.ros.org/open_manipulator_simulations (metapackage)
-- http://wiki.ros.org/open_manipulator_gazebo
+*Sencond,  download modifed git. 
+```bash
+git clone https://github.com/hyunoklee/open_manipulator.git  
+git clone https://github.com/AuTURBO/open_manipulator_simulations.git  
+```
 
-## Open Source related to OpenManipulator
-- [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
-- [open_manipulator_msgs](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
-- [open_manipulator_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
-- [open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
-- [open_manipulator_with_tb3](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3)
-- [open_manipulator_with_tb3_msgs](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs)
-- [open_manipulator_with_tb3_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations)
-- [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
-- [turtlebot3_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
-- [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
-- [turtlebot3_applications](https://github.com/ROBOTIS-GIT/turtlebot3_applications)
-- [turtlebot3_applications_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs)
-- [turtlebot3_autorace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace)
-- [turtlebot3_deliver](https://github.com/ROBOTIS-GIT/turtlebot3_deliver)
-- [hls_lfcd_lds_driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
-- [manipulator_h](https://github.com/ROBOTIS-GIT/ROBOTIS-MANIPULATOR-H)
-- [dynamixel_sdk](https://github.com/ROBOTIS-GIT/DynamixelSDK)
-- [dynamixel_workbench](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
-- [robotis_math](https://github.com/ROBOTIS-GIT/ROBOTIS-Math)
-- [OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
-- [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
+## gazebo model setting
+  
+Move gazebo models in gazebo_model folder to ~/.gazebo/models.  
+ 
+```bash
+$cp -r ~/catkin_ws/src/open_manipulator_simulations/gazebo_model ~/.gazebo/models
+```
+I use warehouse model like below.   
+https://3dwarehouse.sketchup.com/model/35757c0d1ded27425c459aad36b6b0c/beach  
+https://3dwarehouse.sketchup.com/model/0de002ca-6220-44d7-8b87-54c396f8a511/Drink-19  
+https://3dwarehouse.sketchup.com/model/cfb70c44-e8ea-46f2-8ec7-f564a775d342/BARRA-POINT  
 
-## Documents and Videos related to OpenManipulator
-- [ROBOTIS e-Manual for OpenManipulator](http://emanual.robotis.com/docs/en/platform/openmanipulator/)
-- [ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)
-- [ROBOTIS e-Manual for ROBOTIS MANIPULATOR-H](http://emanual.robotis.com/docs/en/platform/manipulator_h/introduction/)
-- [ROBOTIS e-Manual for Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/)
-- [ROBOTIS e-Manual for Dynamixel Workbench](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/)
-- [e-Book for TurtleBot3 and OpenManipulator](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51/)
-- [Videos for OpenManipulator](https://www.youtube.com/playlist?list=PLRG6WP3c31_WpEsB6_Rdt3KhiopXQlUkb)
-- [Videos for TurtleBot3 and OpenManipulator](https://www.youtube.com/playlist?list=PLRG6WP3c31_XI3wlvHlx2Mp8BYqgqDURU)
+## jjapit project 
+
+<img src="/picture/1.png" width="70%" height="70%">  
+
+* run  
+```bash
+$roscore  
+$roslaunch open_manipulator_gazebo open_manipulator_gazebo_jjapit.launch  
+$roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true  
+!!!!! please push play button gazebo window.  
+```
+
+## beach project  
+
+<img src="/picture/2.png" width="70%" height="70%">  
+
+* run  
+```bash
+$roscore  
+$roslaunch open_manipulator_gazebo open_manipulator_gazebo_beach.launch  
+$roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true  
+!!!!! please push play button gazebo window.  
+```
+
+
+
