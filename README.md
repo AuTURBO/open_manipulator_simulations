@@ -19,7 +19,7 @@ git clone https://github.com/AuTURBO/open_manipulator_simulations.git
 Move gazebo models in gazebo_model folder to ~/.gazebo/models.  
  
 ```bash
-$cp -r ~/catkin_ws/src/open_manipulator_simulations/gazebo_model ~/.gazebo/models
+$cp -r ~/catkin_ws/src/open_manipulator_simulations/gazebo_model/* ~/.gazebo/models
 ```
 I use warehouse model like below.   
 https://3dwarehouse.sketchup.com/model/35757c0d1ded27425c459aad36b6b0c/beach  
