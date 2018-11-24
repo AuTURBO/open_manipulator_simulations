@@ -37,7 +37,7 @@ $sudo apt-get install ros-kinetic-jsk-topic-tools
 $sudo apt-get install ros-kinetic-rtabmap-ros
 ```
 
-## gazebo model setting
+## gazebo model information
   
 I use warehouse model like below at beach world.   
 https://3dwarehouse.sketchup.com/model/35757c0d1ded27425c459aad36b6b0c/beach  
