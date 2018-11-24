@@ -46,6 +46,9 @@ https://3dwarehouse.sketchup.com/model/cfb70c44-e8ea-46f2-8ec7-f564a775d342/BARR
 
 ## jjapit project 
 
+Click image to link to YouTube video.  
+[![Video Label](http://img.youtube.com/vi/XlLM5o116SQ/0.jpg)](https://youtu.be/XlLM5o116SQ?t=0s) 
+
 <img src="/picture/1.png" width="70%" height="70%">    
 Click image to link to YouTube video.   
 [![Video Label](http://img.youtube.com/vi/J4-7gAYSDGI/0.jpg)](https://youtu.be/J4-7gAYSDGI?t=0s)     
