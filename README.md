@@ -5,7 +5,8 @@ https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
 
 ## environment setting 
 
-*First you must set open manipulator   
+*First you must set open manipulator and turtlebot3  
+http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/   
 ```bash
 sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core  
 ```
