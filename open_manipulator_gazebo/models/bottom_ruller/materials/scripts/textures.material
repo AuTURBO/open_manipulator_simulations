@@ -1,0 +1,14 @@
+material bottom_ruller
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture map.png
+      }
+    }
+  }
+}
+

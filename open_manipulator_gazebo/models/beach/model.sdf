@@ -428,9 +428,9 @@
           </geometry>
           <material>
             <script>
-              <uri>model://apple/materials/scripts</uri>
-              <uri>model://apple/materials/textures</uri>
-              <name>apple</name>
+              <uri>model://apple1/materials/scripts</uri>
+              <uri>model://apple1/materials/textures</uri>
+              <name>apple1</name>
             </script>
           </material>
         </visual>

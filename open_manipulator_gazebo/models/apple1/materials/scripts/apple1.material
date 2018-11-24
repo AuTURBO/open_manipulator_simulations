@@ -1,0 +1,15 @@
+material apple1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture apple1.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
