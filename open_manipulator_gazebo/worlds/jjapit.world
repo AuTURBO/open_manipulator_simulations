@@ -6,9 +6,59 @@
     </include>
 
     <!-- A ground plane -->
-    <include>
+    <!--<include>
       <uri>model://ground_plane</uri>
-    </include>
+    </include>-->
+
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+	<pose frame=''>0 0 0 0 0 3.14</pose>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.2 2.2</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1000</mu>
+                <mu2>1000</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.2 2.2</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>	      
+	      <uri>model://bottom_ruller/materials/scripts</uri>
+              <uri>model://bottom_ruller/materials/textures</uri>
+              <name>bottom_ruller</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
 
     <physics type="ode">
       <real_time_update_rate>1000.0</real_time_update_rate>
@@ -41,6 +91,20 @@
       <background>0.7 0.7 0.7 1</background>
       <shadows>true</shadows>
     </scene>
+
+    <light name='user_directional_light_2' type='directional'>
+      <pose frame=''>-1.68 0.07 0.81 0 -1.19 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
 
     <gui fullscreen='0'>
       <camera name='user_camera'>
