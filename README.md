@@ -27,7 +27,7 @@ $git clone https://github.com/hyunoklee/darknet_ros.git
 you unzip darknet.zip file at darknet directory.   
 $git clone https://github.com/AuTURBO/turtlebot3_slam_3d
 $git clone https://github.com/jsk-ros-pkg/jsk_common.git
-$catkin_ws && catkin_make
+$cd ~/catkin_ws && catkin_make
 $sudo apt-get install ros-kinetic-jsk-recognition
 $sudo apt-get install ros-kinetic-libsiftfast
 $sudo apt-get install ros-kinetic-laser-assembler
